@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Relative">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="217"
+        android:id="@+id/followers_count"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_below="@+id/settings"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers"
+        android:id="@+id/followers"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@+id/followers_count"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6530"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/followers_count"
+        android:layout_below="@+id/settings"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/followers_count"
+        android:id="@+id/followings_count"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followings"
+        android:id="@+id/followings"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/followings_count"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/followers"
+        android:layout_marginRight="15dp"
+        android:layout_toStartOf="@+id/followers"
+        android:layout_marginEnd="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3431"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/followings_count"
+        android:layout_below="@+id/settings"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/followings_count"
+        android:id="@+id/posts_count"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posts"
+        android:id="@+id/posts"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/posts_count"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/followings"
+        android:layout_toStartOf="@+id/followings"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:layout_alignParentTop="true"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_build_black_24dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profilepic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:cardCornerRadius="40dp"
+        android:layout_below="@+id/settings"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_name"
+        android:textSize="15sp"
+        android:layout_below="@+id/edit_profile"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bio"
+        android:textSize="15sp"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:id="@+id/web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_website"
+        android:textSize="15sp"
+        android:layout_below="@+id/bio"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"/>
+
+    <Button
+        android:id="@+id/edit_profile"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_below="@+id/followings"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@id/web"
+        android:layout_marginTop="12dp">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+</RelativeLayout>

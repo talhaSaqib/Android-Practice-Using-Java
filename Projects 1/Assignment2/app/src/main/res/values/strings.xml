@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Assignment 2</string>
+
+    <string name="title_activity_home">Home</string>
+    <string name="tab_text_1">Relative</string>
+    <string name="tab_text_2">Constraint</string>
+    <string name="tab_text_3">Frame</string>
+    <string name="tab_text_4">Linear</string>
+
+    <string name="main">Main</string>
+    <string name="search">Search</string>
+    <string name="send">Send</string>
+    <string name="profile">Profile</string>
+    <string name="username">username</string>
+    <string name="your_website">Your Website</string>
+    <string name="bio">Your bio goes here. It could be anything, you know.</string>
+    <string name="your_name">Your Name</string>
+</resources>
